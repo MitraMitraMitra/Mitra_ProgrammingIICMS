@@ -140,3 +140,8 @@ class CovidManagementSystem:
             return("There is no medical facility with that ID.")
         else:
             return("The patient with the ID "+str(p_ID)+" has been assigned to the medical facility with the ID "+str(f_ID)+".")
+            
+
+
+    def getPatients (self): 
+         return self.patients

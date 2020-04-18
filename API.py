@@ -172,8 +172,8 @@ def admitPatient(pat_id,facility_id):
 
 
 @app.route("/patients", methods=["GET"])
-def allPatients():   
-    return jsonify([p.serialize() for p in ms.patients()])
+def allPatients():
+    return jsonify(patients=[p.serialize() for p in ms.getPatients()])
 
 
 
